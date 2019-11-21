@@ -1,0 +1,14 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "debug:test",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+			"cwd": "${workspaceFolder}",
+			"args": ["-r", "ts-node/register", "${workspaceFolder}/test/StudentRepoTest.ts"],
+			"protocol": "inspector"
+		}
+	]
+}
